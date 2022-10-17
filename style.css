@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+body{
+    background-color: #fffffd;
+}
+li, a{
+    font-size: 16px;
+    color: #171515;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:30px 10%;
+    background-color: #db3832;
+}
+h1{
+    font-size: 35px;
+    padding: 10px;
+    color: #171515;
+}
+h2{
+    padding: 5px;
+    color: #171515;
+}
+.labels{
+    padding-top: 25px;
+    list-style: none;
+}
+.labels li{
+    display: inline-block;
+}
+.labels li a{
+    padding: 8px 18px;
+    background-color: #f73531;
+    border:none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.2s linear 0s;
+    white-space: nowrap;
+}
+.labels li a:hover{
+    background-color: #fffffd;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    max-width: 1000px;
+}
+.container ul{
+    display: flex;
+    gap: 30px;
+}
+.container .summ h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .summ ul{
+    font-size: 25px;
+	list-style-type: disc;
+}
+.container .skills h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .skills ul{
+	font-size: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	list-style-type: disc;
+}
+.container .skills ul li{
+    display: flex;
+    justify-content: center;
+}
+.container .exp h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .exp p{
+    font-size: 25px;
+}
+.container .edu h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .edu ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	list-style-type: disc;
+}
+.container .edu ul li{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.lang h2{
+    display:flex;
+    justify-content: center;
+    font-size: 35px;
+}
+.lang ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	list-style-type: disc;
+}
+.lang ul li{
+    font-size: 25px;
+}
+.contacts h2{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+.contacts ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+	list-style-type: disc;
+}
+.contacts ul li{
+    font-size: 20px;
+}
+footer{
+    padding: 15px;
+    margin-top: 20px;
+	background-color: #1e2939;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    list-style: none;
+}
+footer ul li{
+    font-size:20px;
+}
+footer ul li img{
+    display: flex;
+    height: 50px;
+    width: auto;
+    padding-bottom: 10px;
+}
+footer ul li a:hover{
+    color:#edb724;	
+}
