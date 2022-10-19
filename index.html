@@ -6,60 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CV</title>
+    <title>My CV</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
+		<img src="img/portrait.png" alt="my-epic-portrait" id="portrait">
         <h1>Daniil Markovichev</h1>
-        <h2>Front-end Developer</h2>
+        <h2>Front End Developer CV</h2>
         <nav class="labels">
-            <ul class="pills">
-				<li><a href="#summ">Introduction</a></li>
+            <ul>
+				<li><a href="#summ">Summary</a></li>
                 <li><a href="#skills">Skills</a></li>
 				<li><a href="#exp">Experience</a></li>
-				<li><a href="#edu">Education</a></li>
+				<li><a href="#study">Education</a></li>
                 <li><a href="#contacts">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="container">
-            <div class="summ" id="summ">
-                <h2>Introduction</h2>
-                <ul>
-					<li>I am a Computer Science student passionate about programming and software/web development. I enjoy broadening my skillsent and wish to one day be able to apply my knowledge to solve real tasks in real working environment.</li>
-					<li>I specialize in front-end technologies: HTML5, CSS/CSS3/SASS, JavaScript, Bootstrap 5, Adaptive Design, and more.</li>
-					<li>I already possess some knowledge and skills in the front-end domain. However, recently, I have decided to systematize my approach and enroll in The Rolling Scopes School’s Front-end/JavaScript course.</li>
-				</ul>
-			</div>
-            <div class="skills" id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>HTML5</li>
-                    <li>CSS3/SASS</li>
-                    <li>Bootstrap</li>
-					<li>Adaptive Design</li>
-					<li>Python</li>
-					<li>C++</li>
-					<li>Git + Github</li>
-                </ul>
-            </div>
-			<div class="exp" id="exp">
-                <h2>Experience</h2>
-                <p>Many programming tasks solved and small projects created during my university studies, as well as online courses such as Pythontutor and LearnJavascript. 2 month internship program at Salesforce Developer Trainee Program in 2021.</p>
-            </div>			
-            <div class="edu" id="edu">
-                <h2>Education</h2>
-                <ul>
-                    <li>The Department of the Intelligent Systems Bachelor, Russian State University for the Humanities</li>
-                    <li>Applied Computer Science Master, The Georg-August University of Gottingen (still ongoing)</li>
-                    <li>Introduction to Artificial Intelligence: The ShanghAI Lectures 2018 course</li>
-                    <li>The Rolling Scopes School Front-end/JavaScript project (still ongoing)</li>
-                </ul>
-            </div>
-            <div class="lang">
+			<div class="column" id="colleft">
+				<div class="skills" id="skills">
+					<h2>Skills</h2>
+					<ul>
+						<li>JavaScript</li>
+						<li>HTML5</li>
+						<li>CSS3/SASS</li>
+						<li>Bootstrap</li>
+						<li>Adaptive Design</li>
+						<li>Python</li>
+						<li>C++</li>
+						<li>Git + Github</li>
+					</ul>
+				</div>
+				<div class="lang" id="lang">
                 <h2>Languages</h2>
                 <ul>
                     <li>C1 English</li>
@@ -74,11 +56,52 @@
 					<li>https://www.linkedin.com/in/daniil-markovichev-1aa7671b1/</li>
                 </ul>
             </div>
-        </div>
+			</div>
+			<div class="column" id="colright">
+				<div class="summ" id="summ">
+					<h2>Summary</h2>
+					<ul>
+						<li>I am a Computer Science student passionate about programming and software/web development. I enjoy broadening my skillsent and wish to one day be able to apply my knowledge to solve real tasks in real working environment.</li>
+						<li>I specialize in front-end technologies: HTML5, CSS/CSS3/SASS, JavaScript, Bootstrap 5, Adaptive Design, and more.</li>
+						<li>I already possess some knowledge and skills in the front-end domain. However, recently, I have decided to systematize my approach and enroll in The Rolling Scopes School’s Front-end/JavaScript course.</li>
+					</ul>
+				</div>
+				<div class="study" id="study">
+					<h2>Education</h2>
+					<ul>
+						<li>The Department of the Intelligent Systems Bachelor, Russian State University for the Humanities</li>
+						<li>Applied Computer Science Master, The Georg-August University of Gottingen (still ongoing)</li>
+						<li>Introduction to Artificial Intelligence: The ShanghAI Lectures 2018 course</li>
+						<li>The Rolling Scopes School Front-end/JavaScript project (still ongoing)</li>
+					</ul>
+				</div>
+				<div class="exp" id="exp">
+					<h2>Experience</h2>
+					<p>Many programming tasks solved and small projects created during my university studies, as well as online courses such as Pythontutor and LearnJavascript. 2 month internship program at Salesforce Developer Trainee Program in 2021. An example of one of my projects is a <a href="https://github.com/DSMNow/Supermail">landing page for a fictional integrated marketing platform Supermail</a>.</p>
+				</div>
+				<div class="mycode" id="mycode">
+					<h2>My Code Example</h2>
+					<pre>
+						<code>
+	function salCombined() {
+		let sum = 0;
+		for (let key in salaries) {
+			sum += salaries[key];
+		}
+		return sum;
+	}
+						
+	sum = salCombined();
+	alert(sum);
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
     </main>
     <footer>
         <ul>
-            <li><a href="https://rs.school/" target="_blank"><img src="logo.png" alt="rsscool-logo"></a></li>
+            <li><a href="https://rs.school/" target="_blank"><img src="img/logo.png" alt="rsscool-logo"></a></li>
             <li>17.10.2022</li>
             <li><a href="https://github.com/DSMNow" target="_blank">GitHub</a></li>
         </ul>
