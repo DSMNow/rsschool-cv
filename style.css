@@ -1,166 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
-
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+	box-sizing: border-box;
     font-family: "Jost", sans-serif;
+	text-decoration: none;
 }
-body{
-    background-color: #fffffd;
-}
-li, a{
-    font-size: 16px;
-    color: #171515;
-}
-
 header{
     display: flex;
-    justify-content: center;
+	flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    padding:30px 10%;
+    padding-top:10px;
+	padding-bottom:10px;
     background-color: #db3832;
 }
-h1{
-    font-size: 35px;
-    padding: 10px;
-    color: #171515;
+#portrait{
+  border-radius: 30px;
+  border: 1px solid #006400;
 }
-h2{
-    padding: 5px;
-    color: #171515;
-}
-.labels{
-    padding-top: 25px;
-    list-style: none;
+.labels ul {
+	display: table;
+	margin: 0 auto;
+	padding: 0 auto;
+	list-style-type: none;
+	overflow: hidden;
+	min-width:100%;
+	border-radius:70px;
 }
 .labels li{
-    display: inline-block;
+    display: inline;
 }
 .labels li a{
-    padding: 8px 18px;
+	font-size: 20px;
+    padding-left: 18px;
+	padding-right: 18px;
     background-color: #f73531;
-    border:none;
-    border-radius: 50px;
-    cursor:pointer;
-    transition: all 0.2s linear 0s;
-    white-space: nowrap;
 }
 .labels li a:hover{
     background-color: #fffffd;
 }
 .container{
     display: flex;
-    flex-direction: column;
-    margin: auto;
+    flex-direction: row;
     justify-content: center;
-    max-width: 1000px;
+	align-items: center;
+    max-width: 100%;
 }
-.container ul{
-    display: flex;
-    gap: 30px;
+.column{
+	overflow-wrap: break-word;
+	padding-bottom: 10x;
 }
-.container .summ h2{
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container .summ ul{
-    font-size: 25px;
-	list-style-type: disc;
-}
-.container .skills h2{
-    font-size: 35px;
-    display: flex;
+.column h2 {
+	display: flex;
     justify-content: center;
     align-items: center;
 }
-.container .skills ul{
-	font-size: 25px;
-    display: flex;
-    justify-content: center;
+#colleft {
+	display: flex;
+	flex-direction: column;
+	background-color:#32d5db;
+	height: 100vh;
+}
+#colleft ul{
+    float: left;
+	padding-left: 50px;
     flex-direction: column;
 	list-style-type: disc;
 }
-.container .skills ul li{
-    display: flex;
-    justify-content: center;
+#colright{
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	flex: 90%;
 }
-.container .exp h2{
-    font-size: 35px;
-    display: flex;
+#colright ul{
+	flex-direction: column;
+	list-style-type: disc;
+}	
+#mycode pre{
+	display: flex;
     justify-content: center;
     align-items: center;
 }
-.container .exp p{
-    font-size: 25px;
-}
-.container .edu h2{
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container .edu ul{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-	list-style-type: disc;
-}
-.container .edu ul li{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-}
-.lang h2{
-    display:flex;
-    justify-content: center;
-    font-size: 35px;
-}
-.lang ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-	list-style-type: disc;
-}
-.lang ul li{
-    font-size: 25px;
-}
-.contacts h2{
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-.contacts ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-	list-style-type: disc;
-}
-.contacts ul li{
-    font-size: 20px;
+#mycode pre code {
+	background-color: #ddd;
+	border: 1px solid #999;
+	width:50vh;
 }
 footer{
-    padding: 15px;
-    margin-top: 20px;
+    padding-top: 15px;
 	background-color: #1e2939;
 }
 footer ul{
     display: flex;
     justify-content: center;
-    gap:30px;
-    list-style: none;
+    list-style-type: none;
 }
 footer ul li{
-    font-size:20px;
+	margin: 10px;
+	color:#fffffd;
 }
 footer ul li img{
-    display: flex;
-    height: 50px;
+    height: 2rem;
     width: auto;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+}
+footer ul li a{
+	color:#fffffd;
 }
 footer ul li a:hover{
     color:#edb724;
